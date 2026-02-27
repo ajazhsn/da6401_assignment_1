@@ -1,0 +1,12 @@
+{"time":"2026-02-26T22:37:54.1485985+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-26T22:37:54.7592777+05:30","level":"INFO","msg":"stream: created new stream","id":"lgcy50rw"}
+{"time":"2026-02-26T22:37:54.7597867+05:30","level":"INFO","msg":"handler: started","stream_id":"lgcy50rw"}
+{"time":"2026-02-26T22:37:54.7624031+05:30","level":"INFO","msg":"stream: started","id":"lgcy50rw"}
+{"time":"2026-02-26T22:37:54.7639218+05:30","level":"INFO","msg":"writer: started","stream_id":"lgcy50rw"}
+{"time":"2026-02-26T22:37:54.7639218+05:30","level":"INFO","msg":"sender: started","stream_id":"lgcy50rw"}
+{"time":"2026-02-26T22:45:29.7193717+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-26T22:45:30.551328+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-26T22:45:30.565867+05:30","level":"INFO","msg":"stream: closing","id":"lgcy50rw"}
+{"time":"2026-02-26T22:45:30.565867+05:30","level":"INFO","msg":"handler: closed","stream_id":"lgcy50rw"}
+{"time":"2026-02-26T22:45:30.575056+05:30","level":"INFO","msg":"sender: closed","stream_id":"lgcy50rw"}
+{"time":"2026-02-26T22:45:30.575056+05:30","level":"INFO","msg":"stream: closed","id":"lgcy50rw"}

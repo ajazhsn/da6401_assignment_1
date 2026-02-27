@@ -1,0 +1,76 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            cceu8wxgvum7khe9f5kxjnazoend6mzb:
+                codePath: loss_comparison.py
+                codePathLocal: loss_comparison.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "195628625920"
+                        used: "185370144768"
+                email: da25m006@smail.iitm.ac.in
+                executable: C:\Users\HP\ds_env\Scripts\python.exe
+                host: Ajaz
+                memory:
+                    total: "16936132608"
+                os: Windows-11-10.0.26200-SP0
+                program: C:\Users\HP\Downloads\file\loss_comparison.py
+                python: CPython 3.12.10
+                root: C:\Users\HP\Downloads\file
+                startedAt: "2026-02-26T10:45:48.267543Z"
+                writerId: cceu8wxgvum7khe9f5kxjnazoend6mzb
+        m: []
+        python_version: 3.12.10
+        t:
+            "1":
+                - 2
+                - 3
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.12.10
+            "5": 0.25.0
+            "8":
+                - 3
+            "10":
+                - 20
+            "12": 0.25.0
+            "13": windows-amd64
+activation:
+    value: relu
+batch_size:
+    value: 64
+dataset:
+    value: fashion_mnist
+epochs:
+    value: 15
+hidden_sizes:
+    value:
+        - 128
+        - 128
+        - 128
+label:
+    value: mse
+learning_rate:
+    value: 0.001
+loss:
+    value: mean_squared_error
+optimizer:
+    value: adam
+wandb_project:
+    value: da6401-assignment1
+weight_decay:
+    value: 0
+weight_init:
+    value: xavier

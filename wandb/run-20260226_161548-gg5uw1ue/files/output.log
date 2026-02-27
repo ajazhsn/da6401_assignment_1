@@ -1,0 +1,15 @@
+  [mse] Epoch 1/15 train_loss=0.0268 val_acc=0.8503
+  [mse] Epoch 2/15 train_loss=0.0204 val_acc=0.8720
+  [mse] Epoch 3/15 train_loss=0.0185 val_acc=0.8670
+  [mse] Epoch 4/15 train_loss=0.0172 val_acc=0.8863
+  [mse] Epoch 5/15 train_loss=0.0165 val_acc=0.8823
+  [mse] Epoch 6/15 train_loss=0.0158 val_acc=0.8777
+  [mse] Epoch 7/15 train_loss=0.0154 val_acc=0.8810
+  [mse] Epoch 8/15 train_loss=0.0147 val_acc=0.8913
+  [mse] Epoch 9/15 train_loss=0.0144 val_acc=0.8927
+  [mse] Epoch 10/15 train_loss=0.0140 val_acc=0.8867
+  [mse] Epoch 11/15 train_loss=0.0135 val_acc=0.8947
+  [mse] Epoch 12/15 train_loss=0.0132 val_acc=0.8860
+  [mse] Epoch 13/15 train_loss=0.0127 val_acc=0.8905
+  [mse] Epoch 14/15 train_loss=0.0127 val_acc=0.8963
+  [mse] Epoch 15/15 train_loss=0.0121 val_acc=0.8915

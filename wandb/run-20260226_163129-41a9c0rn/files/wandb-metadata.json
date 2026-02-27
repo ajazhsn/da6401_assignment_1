@@ -1,0 +1,24 @@
+{
+  "os":  "Windows-11-10.0.26200-SP0",
+  "python":  "CPython 3.12.10",
+  "startedAt":  "2026-02-26T11:01:29.768714Z",
+  "program":  "C:\\Users\\HP\\Downloads\\file\\gradient_analysis.py",
+  "codePath":  "gradient_analysis.py",
+  "codePathLocal":  "gradient_analysis.py",
+  "email":  "da25m006@smail.iitm.ac.in",
+  "root":  "C:\\Users\\HP\\Downloads\\file",
+  "host":  "Ajaz",
+  "executable":  "C:\\Users\\HP\\ds_env\\Scripts\\python.exe",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "195628625920",
+      "used":  "185387773952"
+    }
+  },
+  "memory":  {
+    "total":  "16936132608"
+  },
+  "writerId":  "ax2pd9mg54glm4lqv2oln4xgcv3pjw21"
+}

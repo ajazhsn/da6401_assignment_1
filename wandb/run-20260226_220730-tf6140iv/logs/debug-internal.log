@@ -1,0 +1,12 @@
+{"time":"2026-02-26T22:07:33.5954061+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-26T22:07:34.1273257+05:30","level":"INFO","msg":"stream: created new stream","id":"tf6140iv"}
+{"time":"2026-02-26T22:07:34.1277241+05:30","level":"INFO","msg":"handler: started","stream_id":"tf6140iv"}
+{"time":"2026-02-26T22:07:34.1328445+05:30","level":"INFO","msg":"stream: started","id":"tf6140iv"}
+{"time":"2026-02-26T22:07:34.1328445+05:30","level":"INFO","msg":"writer: started","stream_id":"tf6140iv"}
+{"time":"2026-02-26T22:07:34.1328445+05:30","level":"INFO","msg":"sender: started","stream_id":"tf6140iv"}
+{"time":"2026-02-26T22:11:38.1873978+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-26T22:11:38.6914704+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-26T22:11:38.6984854+05:30","level":"INFO","msg":"stream: closing","id":"tf6140iv"}
+{"time":"2026-02-26T22:11:38.6990321+05:30","level":"INFO","msg":"handler: closed","stream_id":"tf6140iv"}
+{"time":"2026-02-26T22:11:38.6995637+05:30","level":"INFO","msg":"sender: closed","stream_id":"tf6140iv"}
+{"time":"2026-02-26T22:11:38.7001077+05:30","level":"INFO","msg":"stream: closed","id":"tf6140iv"}

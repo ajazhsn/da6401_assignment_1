@@ -1,0 +1,30 @@
+Loading dataset: fashion_mnist
+Train: (54000, 784), Val: (6000, 784), Test: (10000, 784)
+Epoch   1/15  train_loss=0.0292  train_acc=0.7955  val_loss=0.0205  val_acc=0.8582
+Model saved to best_model.npy
+Epoch   2/15  train_loss=0.0200  train_acc=0.8614  val_loss=0.0189  val_acc=0.8672
+Model saved to best_model.npy
+Epoch   3/15  train_loss=0.0184  train_acc=0.8725  val_loss=0.0171  val_acc=0.8798
+Model saved to best_model.npy
+Epoch   4/15  train_loss=0.0171  train_acc=0.8820  val_loss=0.0165  val_acc=0.8850
+Model saved to best_model.npy
+Epoch   5/15  train_loss=0.0163  train_acc=0.8878  val_loss=0.0173  val_acc=0.8808
+Epoch   6/15  train_loss=0.0157  train_acc=0.8934  val_loss=0.0163  val_acc=0.8898
+Model saved to best_model.npy
+Epoch   7/15  train_loss=0.0152  train_acc=0.8964  val_loss=0.0158  val_acc=0.8873
+Epoch   8/15  train_loss=0.0146  train_acc=0.9009  val_loss=0.0156  val_acc=0.8882
+Epoch   9/15  train_loss=0.0141  train_acc=0.9047  val_loss=0.0161  val_acc=0.8868
+Epoch  10/15  train_loss=0.0137  train_acc=0.9078  val_loss=0.0150  val_acc=0.8932
+Model saved to best_model.npy
+Epoch  11/15  train_loss=0.0135  train_acc=0.9097  val_loss=0.0171  val_acc=0.8805
+Epoch  12/15  train_loss=0.0130  train_acc=0.9126  val_loss=0.0153  val_acc=0.8918
+Epoch  13/15  train_loss=0.0127  train_acc=0.9148  val_loss=0.0150  val_acc=0.8972
+Model saved to best_model.npy
+Epoch  14/15  train_loss=0.0123  train_acc=0.9184  val_loss=0.0151  val_acc=0.8973
+Model saved to best_model.npy
+Epoch  15/15  train_loss=0.0121  train_acc=0.9198  val_loss=0.0149  val_acc=0.8977
+Model saved to best_model.npy
+Model loaded from best_model.npy
+
+Best val acc : 0.8977
+Test accuracy: 0.8828

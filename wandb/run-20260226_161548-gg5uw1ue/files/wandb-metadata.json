@@ -1,0 +1,24 @@
+{
+  "os":  "Windows-11-10.0.26200-SP0",
+  "python":  "CPython 3.12.10",
+  "startedAt":  "2026-02-26T10:45:48.267543Z",
+  "program":  "C:\\Users\\HP\\Downloads\\file\\loss_comparison.py",
+  "codePath":  "loss_comparison.py",
+  "codePathLocal":  "loss_comparison.py",
+  "email":  "da25m006@smail.iitm.ac.in",
+  "root":  "C:\\Users\\HP\\Downloads\\file",
+  "host":  "Ajaz",
+  "executable":  "C:\\Users\\HP\\ds_env\\Scripts\\python.exe",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "195628625920",
+      "used":  "185370144768"
+    }
+  },
+  "memory":  {
+    "total":  "16936132608"
+  },
+  "writerId":  "cceu8wxgvum7khe9f5kxjnazoend6mzb"
+}

@@ -1,0 +1,37 @@
+{
+  "os":  "Windows-11-10.0.26200-SP0",
+  "python":  "CPython 3.12.10",
+  "startedAt":  "2026-02-26T11:53:39.505136Z",
+  "args":  [
+    "--activation=tanh",
+    "--batch_size=64",
+    "--dataset=fashion_mnist",
+    "--epochs=15",
+    "--hidden_size=128",
+    "--learning_rate=0.000138727119082274",
+    "--loss=mean_squared_error",
+    "--num_layers=4",
+    "--optimizer=nadam",
+    "--weight_decay=0",
+    "--weight_init=xavier"
+  ],
+  "program":  "C:\\Users\\HP\\Downloads\\file\\train.py",
+  "codePath":  "train.py",
+  "codePathLocal":  "train.py",
+  "email":  "da25m006@smail.iitm.ac.in",
+  "root":  "C:\\Users\\HP\\Downloads\\file",
+  "host":  "Ajaz",
+  "executable":  "C:\\Users\\HP\\ds_env\\Scripts\\python.exe",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "195628625920",
+      "used":  "185984286720"
+    }
+  },
+  "memory":  {
+    "total":  "16936132608"
+  },
+  "writerId":  "u42qcf9a70n693phxkvq5y39mm22xrys"
+}

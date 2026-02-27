@@ -1,0 +1,28 @@
+{
+  "os":  "Windows-11-10.0.26200-SP0",
+  "python":  "CPython 3.12.10",
+  "startedAt":  "2026-02-26T10:43:36.948254Z",
+  "args":  [
+    "--dataset",
+    "fashion_mnist"
+  ],
+  "program":  "C:\\Users\\HP\\Downloads\\file\\data_exploration.py",
+  "codePath":  "data_exploration.py",
+  "codePathLocal":  "data_exploration.py",
+  "email":  "da25m006@smail.iitm.ac.in",
+  "root":  "C:\\Users\\HP\\Downloads\\file",
+  "host":  "Ajaz",
+  "executable":  "C:\\Users\\HP\\ds_env\\Scripts\\python.exe",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "195628625920",
+      "used":  "185238740992"
+    }
+  },
+  "memory":  {
+    "total":  "16936132608"
+  },
+  "writerId":  "hupumpz4widk8bu9oc9le7oxp761mkub"
+}

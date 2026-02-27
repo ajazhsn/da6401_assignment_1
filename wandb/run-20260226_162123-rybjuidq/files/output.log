@@ -1,0 +1,10 @@
+  [nadam] Epoch 1/10 train_loss=0.4996 val_acc=0.8710
+  [nadam] Epoch 2/10 train_loss=0.3635 val_acc=0.8705
+  [nadam] Epoch 3/10 train_loss=0.3297 val_acc=0.8898
+  [nadam] Epoch 4/10 train_loss=0.3065 val_acc=0.8733
+  [nadam] Epoch 5/10 train_loss=0.2881 val_acc=0.8888
+  [nadam] Epoch 6/10 train_loss=0.2730 val_acc=0.8930
+  [nadam] Epoch 7/10 train_loss=0.2629 val_acc=0.8845
+  [nadam] Epoch 8/10 train_loss=0.2486 val_acc=0.8965
+  [nadam] Epoch 9/10 train_loss=0.2400 val_acc=0.8920
+  [nadam] Epoch 10/10 train_loss=0.2329 val_acc=0.8942

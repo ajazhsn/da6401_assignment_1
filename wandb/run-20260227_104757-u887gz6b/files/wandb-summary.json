@@ -1,0 +1,1 @@
+{"neuron_3_grad_norm":0,"_step":4224,"epoch":5,"iteration":4220,"_timestamp":1.7721695042902243e+09,"loss":2.3025848238265465,"neuron_2_grad_norm":0,"neuron_0_grad_norm":0,"_runtime":22,"overall_grad_norm":0,"_wandb":{"runtime":22},"neuron_1_grad_norm":0,"val_accuracy":0.1,"neuron_4_grad_norm":0}

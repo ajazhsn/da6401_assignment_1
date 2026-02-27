@@ -1,0 +1,12 @@
+{"time":"2026-02-26T22:17:24.7458351+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-26T22:17:25.2580328+05:30","level":"INFO","msg":"stream: created new stream","id":"rsju1dit"}
+{"time":"2026-02-26T22:17:25.2588314+05:30","level":"INFO","msg":"handler: started","stream_id":"rsju1dit"}
+{"time":"2026-02-26T22:17:25.2630246+05:30","level":"INFO","msg":"stream: started","id":"rsju1dit"}
+{"time":"2026-02-26T22:17:25.2630246+05:30","level":"INFO","msg":"writer: started","stream_id":"rsju1dit"}
+{"time":"2026-02-26T22:17:25.2630246+05:30","level":"INFO","msg":"sender: started","stream_id":"rsju1dit"}
+{"time":"2026-02-26T22:25:16.0646938+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-26T22:25:16.7421286+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-26T22:25:16.7618126+05:30","level":"INFO","msg":"stream: closing","id":"rsju1dit"}
+{"time":"2026-02-26T22:25:16.7618126+05:30","level":"INFO","msg":"handler: closed","stream_id":"rsju1dit"}
+{"time":"2026-02-26T22:25:16.7634689+05:30","level":"INFO","msg":"sender: closed","stream_id":"rsju1dit"}
+{"time":"2026-02-26T22:25:16.7634689+05:30","level":"INFO","msg":"stream: closed","id":"rsju1dit"}

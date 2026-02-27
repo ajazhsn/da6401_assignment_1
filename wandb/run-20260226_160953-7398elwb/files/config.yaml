@@ -1,0 +1,108 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            hag8m6p9x8mq1fl23i7n0o6or9xyfqyl:
+                args:
+                    - -d
+                    - fashion_mnist
+                    - -e
+                    - "20"
+                    - -b
+                    - "64"
+                    - -o
+                    - adam
+                    - -lr
+                    - "0.001"
+                    - -nhl
+                    - "3"
+                    - -sz
+                    - "128"
+                    - "128"
+                    - "128"
+                    - -a
+                    - relu
+                    - -wi
+                    - xavier
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "195628625920"
+                        used: "185236402176"
+                email: da25m006@smail.iitm.ac.in
+                executable: C:\Users\HP\ds_env\Scripts\python.exe
+                host: Ajaz
+                memory:
+                    total: "16936132608"
+                os: Windows-11-10.0.26200-SP0
+                program: C:\Users\HP\Downloads\file\train.py
+                python: CPython 3.12.10
+                root: C:\Users\HP\Downloads\file
+                startedAt: "2026-02-26T10:39:53.029692Z"
+                writerId: hag8m6p9x8mq1fl23i7n0o6or9xyfqyl
+        m: []
+        python_version: 3.12.10
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 16
+                - 62
+            "4": 3.12.10
+            "5": 0.25.0
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64
+activation:
+    value: relu
+batch_size:
+    value: 64
+config_path:
+    value: best_config.json
+dataset:
+    value: fashion_mnist
+epochs:
+    value: 20
+hidden_size:
+    value:
+        - 128
+        - 128
+        - 128
+hidden_sizes:
+    value:
+        - 128
+        - 128
+        - 128
+learning_rate:
+    value: 0.001
+loss:
+    value: cross_entropy
+no_wandb:
+    value: false
+num_layers:
+    value: 3
+optimizer:
+    value: adam
+save_path:
+    value: best_model.npy
+val_split:
+    value: 0.1
+wandb_entity:
+    value: null
+wandb_project:
+    value: da6401-assignment1
+weight_decay:
+    value: 0
+weight_init:
+    value: xavier

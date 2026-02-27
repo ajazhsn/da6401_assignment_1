@@ -1,0 +1,12 @@
+{"time":"2026-02-26T19:03:14.1644707+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-26T19:03:14.8904829+05:30","level":"INFO","msg":"stream: created new stream","id":"zafutxqv"}
+{"time":"2026-02-26T19:03:14.9377015+05:30","level":"INFO","msg":"stream: started","id":"zafutxqv"}
+{"time":"2026-02-26T19:03:14.9417025+05:30","level":"INFO","msg":"writer: started","stream_id":"zafutxqv"}
+{"time":"2026-02-26T19:03:14.9417025+05:30","level":"INFO","msg":"sender: started","stream_id":"zafutxqv"}
+{"time":"2026-02-26T19:03:14.9417025+05:30","level":"INFO","msg":"handler: started","stream_id":"zafutxqv"}
+{"time":"2026-02-26T19:39:15.8883141+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-26T19:39:16.2546134+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-26T19:39:16.2728535+05:30","level":"INFO","msg":"stream: closing","id":"zafutxqv"}
+{"time":"2026-02-26T19:39:16.2728535+05:30","level":"INFO","msg":"handler: closed","stream_id":"zafutxqv"}
+{"time":"2026-02-26T19:39:16.2753712+05:30","level":"INFO","msg":"sender: closed","stream_id":"zafutxqv"}
+{"time":"2026-02-26T19:39:16.2753712+05:30","level":"INFO","msg":"stream: closed","id":"zafutxqv"}

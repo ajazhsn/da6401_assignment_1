@@ -1,0 +1,97 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            aznsg3penn1a4j3pwa3wjg61lo35rusc:
+                args:
+                    - --activation=relu
+                    - --batch_size=64
+                    - --dataset=fashion_mnist
+                    - --epochs=15
+                    - --hidden_size=128
+                    - --learning_rate=0.00023702386597324667
+                    - --loss=mean_squared_error
+                    - --num_layers=3
+                    - --optimizer=nadam
+                    - --weight_decay=0
+                    - --weight_init=xavier
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "195628625920"
+                        used: "185915387904"
+                email: da25m006@smail.iitm.ac.in
+                executable: C:\Users\HP\ds_env\Scripts\python.exe
+                host: Ajaz
+                memory:
+                    total: "16936132608"
+                os: Windows-11-10.0.26200-SP0
+                program: C:\Users\HP\Downloads\file\train.py
+                python: CPython 3.12.10
+                root: C:\Users\HP\Downloads\file
+                startedAt: "2026-02-26T16:18:33.566558Z"
+                writerId: aznsg3penn1a4j3pwa3wjg61lo35rusc
+        m: []
+        python_version: 3.12.10
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 14
+                - 16
+                - 62
+            "4": 3.12.10
+            "5": 0.25.0
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64
+activation:
+    value: relu
+batch_size:
+    value: 64
+config_path:
+    value: best_config.json
+dataset:
+    value: fashion_mnist
+epochs:
+    value: 15
+hidden_size:
+    value: 128
+hidden_sizes:
+    value:
+        - 128
+        - 128
+        - 128
+learning_rate:
+    value: 0.00023702386597324667
+loss:
+    value: mean_squared_error
+no_wandb:
+    value: false
+num_layers:
+    value: 3
+optimizer:
+    value: nadam
+save_path:
+    value: best_model.npy
+val_split:
+    value: 0.1
+wandb_entity:
+    value: null
+wandb_project:
+    value: da6401-assignment1
+weight_decay:
+    value: 0
+weight_init:
+    value: xavier

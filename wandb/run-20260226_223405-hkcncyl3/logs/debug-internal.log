@@ -1,0 +1,12 @@
+{"time":"2026-02-26T22:34:07.8800094+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-26T22:34:08.3818495+05:30","level":"INFO","msg":"stream: created new stream","id":"hkcncyl3"}
+{"time":"2026-02-26T22:34:08.3818495+05:30","level":"INFO","msg":"handler: started","stream_id":"hkcncyl3"}
+{"time":"2026-02-26T22:34:08.3840456+05:30","level":"INFO","msg":"stream: started","id":"hkcncyl3"}
+{"time":"2026-02-26T22:34:08.3840456+05:30","level":"INFO","msg":"sender: started","stream_id":"hkcncyl3"}
+{"time":"2026-02-26T22:34:08.3840456+05:30","level":"INFO","msg":"writer: started","stream_id":"hkcncyl3"}
+{"time":"2026-02-26T22:41:07.7419235+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-26T22:41:08.2494383+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-26T22:41:08.2680532+05:30","level":"INFO","msg":"stream: closing","id":"hkcncyl3"}
+{"time":"2026-02-26T22:41:08.2680532+05:30","level":"INFO","msg":"handler: closed","stream_id":"hkcncyl3"}
+{"time":"2026-02-26T22:41:08.2692167+05:30","level":"INFO","msg":"sender: closed","stream_id":"hkcncyl3"}
+{"time":"2026-02-26T22:41:08.2692167+05:30","level":"INFO","msg":"stream: closed","id":"hkcncyl3"}

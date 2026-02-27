@@ -1,0 +1,22 @@
+2026-02-26 17:11:50,073 INFO    MainThread:23868 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-02-26 17:11:50,074 INFO    MainThread:23868 [wandb_setup.py:_flush():81] Configure stats pid to 23868
+2026-02-26 17:11:50,074 INFO    MainThread:23868 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-02-26 17:11:50,074 INFO    MainThread:23868 [wandb_init.py:setup_run_log_directory():717] Logging user logs to C:\Users\HP\Downloads\file\wandb\run-20260226_171149-xq8c5uz1\logs\debug.log
+2026-02-26 17:11:50,075 INFO    MainThread:23868 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to C:\Users\HP\Downloads\file\wandb\run-20260226_171149-xq8c5uz1\logs\debug-internal.log
+2026-02-26 17:11:50,075 INFO    MainThread:23868 [wandb_init.py:init():844] calling init triggers
+2026-02-26 17:11:50,076 INFO    MainThread:23868 [wandb_init.py:init():849] wandb.init called with sweep_config: {'activation': 'sigmoid', 'batch_size': 32, 'dataset': 'fashion_mnist', 'epochs': 15, 'hidden_size': 128, 'learning_rate': 0.0015319751958462308, 'loss': 'mean_squared_error', 'num_layers': 4, 'optimizer': 'rmsprop', 'weight_decay': 0, 'weight_init': 'random'}
+config: {'dataset': 'fashion_mnist', 'epochs': 15, 'batch_size': 32, 'loss': 'mean_squared_error', 'optimizer': 'rmsprop', 'learning_rate': 0.0015319751958462308, 'weight_decay': 0.0, 'num_layers': 4, 'hidden_size': [128], 'activation': 'sigmoid', 'weight_init': 'random', 'val_split': 0.1, 'no_wandb': False, 'wandb_project': 'da6401-assignment1', 'wandb_entity': None, 'save_path': 'best_model.npy', 'config_path': 'best_config.json', 'hidden_sizes': [128, 128, 128, 128], '_wandb': {}}
+2026-02-26 17:11:50,076 INFO    MainThread:23868 [wandb_init.py:init():892] starting backend
+2026-02-26 17:11:52,731 INFO    MainThread:23868 [wandb_init.py:init():895] sending inform_init request
+2026-02-26 17:11:52,863 INFO    MainThread:23868 [wandb_init.py:init():903] backend started and connected
+2026-02-26 17:11:52,864 INFO    MainThread:23868 [wandb_run.py:_config_callback():1403] config_cb None None {'activation': 'sigmoid', 'batch_size': 32, 'dataset': 'fashion_mnist', 'epochs': 15, 'hidden_size': 128, 'learning_rate': 0.0015319751958462308, 'loss': 'mean_squared_error', 'num_layers': 4, 'optimizer': 'rmsprop', 'weight_decay': 0, 'weight_init': 'random'}
+2026-02-26 17:11:52,866 INFO    MainThread:23868 [wandb_init.py:init():973] updated telemetry
+2026-02-26 17:11:52,872 INFO    MainThread:23868 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-02-26 17:11:53,801 INFO    MainThread:23868 [wandb_init.py:init():1042] starting run threads in backend
+2026-02-26 17:11:54,415 INFO    MainThread:23868 [wandb_run.py:_console_start():2524] atexit reg
+2026-02-26 17:11:54,415 INFO    MainThread:23868 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-02-26 17:11:54,416 INFO    MainThread:23868 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-02-26 17:11:54,416 INFO    MainThread:23868 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-02-26 17:11:54,424 INFO    MainThread:23868 [wandb_init.py:init():1082] run started, returning control to user process
+2026-02-26 17:20:17,766 INFO    wandb-AsyncioManager-main:23868 [service_client.py:_forward_responses():134] Reached EOF.
+2026-02-26 17:20:17,767 INFO    wandb-AsyncioManager-main:23868 [mailbox.py:close():155] Closing mailbox, abandoning 1 handles.

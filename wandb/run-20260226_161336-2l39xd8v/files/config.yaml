@@ -1,0 +1,74 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            hupumpz4widk8bu9oc9le7oxp761mkub:
+                args:
+                    - --dataset
+                    - fashion_mnist
+                codePath: data_exploration.py
+                codePathLocal: data_exploration.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "195628625920"
+                        used: "185238740992"
+                email: da25m006@smail.iitm.ac.in
+                executable: C:\Users\HP\ds_env\Scripts\python.exe
+                host: Ajaz
+                memory:
+                    total: "16936132608"
+                os: Windows-11-10.0.26200-SP0
+                program: C:\Users\HP\Downloads\file\data_exploration.py
+                python: CPython 3.12.10
+                root: C:\Users\HP\Downloads\file
+                startedAt: "2026-02-26T10:43:36.948254Z"
+                writerId: hupumpz4widk8bu9oc9le7oxp761mkub
+        m: []
+        python_version: 3.12.10
+        t:
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 13
+            "4": 3.12.10
+            "5": 0.25.0
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64
+        visualize:
+            class_distribution:
+                panel_config:
+                    fieldSettings:
+                        label: class_name
+                        value: count
+                    panelDefId: wandb/bar/v0
+                    stringSettings:
+                        title: Class Distribution
+                    transform:
+                        name: tableWithLeafColNames
+                    userQuery:
+                        queryFields:
+                            - args:
+                                - name: runSets
+                                  value: ${runSets}
+                              fields:
+                                - fields: []
+                                  name: id
+                                - fields: []
+                                  name: name
+                                - fields: []
+                                  name: _defaultColorIndex
+                                - args:
+                                    - name: tableKey
+                                      value: class_distribution_table
+                                  fields: []
+                                  name: summaryTable
+                              name: runSets
+                panel_type: Vega2

@@ -1,0 +1,24 @@
+wandb_version: 1
+
+activation:
+  value: relu
+batch_size:
+  value: 32
+dataset:
+  value: fashion_mnist
+epochs:
+  value: 15
+hidden_size:
+  value: 128
+learning_rate:
+  value: 0.0005328207142323539
+loss:
+  value: mean_squared_error
+num_layers:
+  value: 2
+optimizer:
+  value: adam
+weight_decay:
+  value: 0
+weight_init:
+  value: xavier

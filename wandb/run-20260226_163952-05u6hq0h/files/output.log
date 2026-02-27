@@ -1,0 +1,22 @@
+  [config-2-nadam-tanh] Epoch 1/20 train_acc=0.7828 val_acc=0.7863
+  [config-2-nadam-tanh] Epoch 2/20 train_acc=0.7851 val_acc=0.7815
+  [config-2-nadam-tanh] Epoch 3/20 train_acc=0.7800 val_acc=0.7740
+  [config-2-nadam-tanh] Epoch 4/20 train_acc=0.7810 val_acc=0.7668
+  [config-2-nadam-tanh] Epoch 5/20 train_acc=0.7796 val_acc=0.7920
+  [config-2-nadam-tanh] Epoch 6/20 train_acc=0.7793 val_acc=0.7810
+  [config-2-nadam-tanh] Epoch 7/20 train_acc=0.7775 val_acc=0.7827
+  [config-2-nadam-tanh] Epoch 8/20 train_acc=0.7773 val_acc=0.7878
+  [config-2-nadam-tanh] Epoch 9/20 train_acc=0.7798 val_acc=0.7903
+  [config-2-nadam-tanh] Epoch 10/20 train_acc=0.7792 val_acc=0.7768
+  [config-2-nadam-tanh] Epoch 11/20 train_acc=0.7789 val_acc=0.7830
+  [config-2-nadam-tanh] Epoch 12/20 train_acc=0.7788 val_acc=0.7775
+  [config-2-nadam-tanh] Epoch 13/20 train_acc=0.7790 val_acc=0.7890
+  [config-2-nadam-tanh] Epoch 14/20 train_acc=0.7787 val_acc=0.7933
+  [config-2-nadam-tanh] Epoch 15/20 train_acc=0.7787 val_acc=0.7882
+  [config-2-nadam-tanh] Epoch 16/20 train_acc=0.7794 val_acc=0.7753
+  [config-2-nadam-tanh] Epoch 17/20 train_acc=0.7776 val_acc=0.7807
+  [config-2-nadam-tanh] Epoch 18/20 train_acc=0.7791 val_acc=0.7825
+  [config-2-nadam-tanh] Epoch 19/20 train_acc=0.7783 val_acc=0.7773
+  [config-2-nadam-tanh] Epoch 20/20 train_acc=0.7788 val_acc=0.7918
+
+  [config-2-nadam-tanh] Test Acc=0.7775  F1=0.7709
