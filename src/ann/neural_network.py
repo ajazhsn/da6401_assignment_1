@@ -28,11 +28,15 @@ class NeuralNetwork:
         self,
         input_size: int,
         hidden_sizes: list,
-        output_size: int,
+        output_size: int = 10,
         activation: str = "relu",
         weight_init: str = "xavier",
         loss: str = "cross_entropy",
+        num_classes: int = None,
     ):
+        # Support num_classes as alias for output_size
+        if num_classes is not None:
+            output_size = num_classes
         """
         Args:
             input_size:   Number of input features (e.g. 784 for 28x28 images).

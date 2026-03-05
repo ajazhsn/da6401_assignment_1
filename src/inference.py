@@ -28,7 +28,7 @@ from ann.neural_network import NeuralNetwork
 from utils.data_loader import load_data
 
 
-def parse_args():
+def parse_arguments():
     parser = argparse.ArgumentParser(
         description="Inference — DA6401 Assignment 1"
     )
@@ -41,8 +41,10 @@ def parse_args():
     return parser.parse_args()
 
 
+parse_args = parse_arguments
+
 def main():
-    args = parse_args()
+    args = parse_arguments()
 
     # Load model configuration
     with open(args.config, "r") as f:
