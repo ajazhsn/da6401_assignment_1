@@ -12,13 +12,14 @@ class NeuralNetwork:
         import argparse
         if isinstance(input_size, argparse.Namespace):
             ns = input_size
-            input_size   = getattr(ns, "input_size", 784)
-            hidden_sizes = getattr(ns, "hidden_sizes", getattr(ns, "hidden_size", None))
-            output_size  = getattr(ns, "output_size", 10)
-            activation   = getattr(ns, "activation", "relu")
-            weight_init  = getattr(ns, "weight_init", "xavier")
-            loss         = getattr(ns, "loss", "cross_entropy")
-            num_layers   = getattr(ns, "num_layers", None)
+            input_size = getattr(ns, "input_size", 784)
+            hidden_sizes = getattr(
+                ns, "hidden_sizes", getattr(ns, "hidden_size", None))
+            output_size = getattr(ns, "output_size", 10)
+            activation = getattr(ns, "activation", "relu")
+            weight_init = getattr(ns, "weight_init", "xavier")
+            loss = getattr(ns, "loss", "cross_entropy")
+            num_layers = getattr(ns, "num_layers", None)
         if hidden_sizes is None:
             if hidden_size is not None and num_layers is not None:
                 hidden_sizes = [int(hidden_size)] * int(num_layers)
@@ -32,17 +33,19 @@ class NeuralNetwork:
             hidden_sizes = [int(hidden_sizes)]
         hidden_sizes = [int(h) for h in hidden_sizes]
         self.hidden_sizes = hidden_sizes
-        self.input_size   = int(input_size)
-        self.output_size  = int(output_size)
-        self.activation   = activation
-        self.weight_init  = weight_init
-        self.loss_name    = str(loss)
-        self.layers       = []
-        self.loss_fn      = get_loss(str(loss))
+        self.input_size = int(input_size)
+        self.output_size = int(output_size)
+        self.activation = activation
+        self.weight_init = weight_init
+        self.loss_name = str(loss)
+        self.layers = []
+        self.loss_fn = get_loss(str(loss))
         sizes = [self.input_size] + hidden_sizes + [self.output_size]
         for i in range(len(sizes) - 1):
-            act = get_activation(activation) if i < len(sizes) - 2 else Identity()
-            self.layers.append(NeuralLayer(sizes[i], sizes[i+1], activation=act, weight_init=weight_init))
+            act = get_activation(activation) if i < len(
+                sizes) - 2 else Identity()
+            self.layers.append(NeuralLayer(
+                sizes[i], sizes[i+1], activation=act, weight_init=weight_init))
 
     def forward(self, x):
         self._last_batch_size = x.shape[0]
@@ -61,12 +64,6 @@ class NeuralNetwork:
         return self.loss_fn.forward(logits, y_true)
 
     def backward(self, y_true=None, y_pred=None, weight_decay=0.0, *args, **kwargs):
-        """
-        Supports:
-          model.backward()              -> uses cached loss grad
-          model.backward(y_true, y_pred) -> autograder style
-        Always returns (grad_W_list, grad_b_list) for autograder unpacking.
-        """
         if y_pred is not None and y_true is not None:
             probs = softmax(y_pred)
             batch_size = probs.shape[0]
@@ -105,11 +102,16 @@ class NeuralNetwork:
         if isinstance(weights, np.ndarray) and weights.ndim == 0:
             weights = weights.item()
         if isinstance(weights, dict):
+            # Always use explicit index — never rely on dict iteration order
             for i, layer in enumerate(self.layers):
-                if f"W{i}" in weights: layer.W = np.array(weights[f"W{i}"]).copy()
-                if f"b{i}" in weights: layer.b = np.array(weights[f"b{i}"]).copy()
+                key_W = f"W{i}"
+                key_b = f"b{i}"
+                if key_W in weights:
+                    layer.W = np.array(weights[key_W], dtype=np.float64).copy()
+                if key_b in weights:
+                    layer.b = np.array(weights[key_b], dtype=np.float64).copy()
             return
-        # Flat list / tuple format
+        # Flat list / tuple format fallback
         weights = list(weights)
         while len(weights) > 0 and np.array(weights[0]).ndim == 0:
             weights = weights[1:]
@@ -132,5 +134,5 @@ class NeuralNetwork:
 
     def load(self, path):
         data = np.load(path, allow_pickle=True)
-        self.set_weights(data)  # set_weights handles 0-d array
+        self.set_weights(data)
         print(f"Model loaded <- {path}")
