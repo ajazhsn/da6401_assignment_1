@@ -27,25 +27,49 @@ class NeuralNetwork:
     def __init__(
         self,
         input_size: int,
-        hidden_sizes: list,
+        hidden_sizes: list = None,
         output_size: int = 10,
         activation: str = "relu",
         weight_init: str = "xavier",
         loss: str = "cross_entropy",
-        num_classes: int = None,
+        num_layers: int = None,
+        hidden_size: int = None,
     ):
-        # Support num_classes as alias for output_size
-        if num_classes is not None:
-            output_size = num_classes
         """
         Args:
             input_size:   Number of input features (e.g. 784 for 28x28 images).
             hidden_sizes: List of neuron counts per hidden layer (e.g. [128, 128]).
+                          If None, uses hidden_size * num_layers or defaults to [128].
             output_size:  Number of output classes (e.g. 10 for Fashion-MNIST).
             activation:   Activation for hidden layers: 'sigmoid' | 'tanh' | 'relu'.
             weight_init:  Weight init strategy: 'xavier' | 'random'.
             loss:         Loss function: 'cross_entropy' | 'mean_squared_error'.
+            num_layers:   Alternative way to specify number of hidden layers.
+            hidden_size:  Alternative way to specify neurons per layer (int).
         """
+        # Resolve hidden_sizes from multiple possible input formats
+        if hidden_sizes is None:
+            if hidden_size is not None and num_layers is not None:
+                # e.g. hidden_size=128, num_layers=3 → [128, 128, 128]
+                hidden_sizes = [hidden_size] * num_layers
+            elif hidden_size is not None:
+                hidden_sizes = [hidden_size]
+            elif num_layers is not None:
+                hidden_sizes = [128] * num_layers
+            else:
+                # Sensible default
+                hidden_sizes = [128]
+
+        # If hidden_sizes is a single int, wrap it
+        if isinstance(hidden_sizes, int):
+            hidden_sizes = [hidden_sizes]
+
+        self.hidden_sizes = hidden_sizes
+        self.input_size   = input_size
+        self.output_size  = output_size
+        self.activation   = activation
+        self.weight_init  = weight_init
+
         self.layers  = []
         self.loss_fn = get_loss(loss)
 
