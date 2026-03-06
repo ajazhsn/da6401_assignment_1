@@ -1,0 +1,15 @@
+  [5L-relu] Epoch 1/15 train_loss=0.5327 val_acc=0.8468 grad_norm_L1=0.019074
+  [5L-relu] Epoch 2/15 train_loss=0.3789 val_acc=0.8745 grad_norm_L1=0.011289
+  [5L-relu] Epoch 3/15 train_loss=0.3432 val_acc=0.8725 grad_norm_L1=0.022036
+  [5L-relu] Epoch 4/15 train_loss=0.3198 val_acc=0.8783 grad_norm_L1=0.014195
+  [5L-relu] Epoch 5/15 train_loss=0.3024 val_acc=0.8802 grad_norm_L1=0.033384
+  [5L-relu] Epoch 6/15 train_loss=0.2898 val_acc=0.8883 grad_norm_L1=0.023672
+  [5L-relu] Epoch 7/15 train_loss=0.2741 val_acc=0.8848 grad_norm_L1=0.018595
+  [5L-relu] Epoch 8/15 train_loss=0.2612 val_acc=0.8858 grad_norm_L1=0.013199
+  [5L-relu] Epoch 9/15 train_loss=0.2587 val_acc=0.8930 grad_norm_L1=0.012652
+  [5L-relu] Epoch 10/15 train_loss=0.2464 val_acc=0.8887 grad_norm_L1=0.021784
+  [5L-relu] Epoch 11/15 train_loss=0.2346 val_acc=0.8953 grad_norm_L1=0.032097
+  [5L-relu] Epoch 12/15 train_loss=0.2289 val_acc=0.8937 grad_norm_L1=0.014695
+  [5L-relu] Epoch 13/15 train_loss=0.2265 val_acc=0.8858 grad_norm_L1=0.011615
+  [5L-relu] Epoch 14/15 train_loss=0.2197 val_acc=0.8927 grad_norm_L1=0.037612
+  [5L-relu] Epoch 15/15 train_loss=0.2106 val_acc=0.8983 grad_norm_L1=0.029915

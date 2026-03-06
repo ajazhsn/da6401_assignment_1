@@ -1,0 +1,37 @@
+Loading dataset: fashion_mnist
+Train: (54000, 784), Val: (6000, 784), Test: (10000, 784)
+Epoch   1/15  train_loss=0.0294  train_acc=0.7973  val_loss=0.0229  val_acc=0.8455
+Model saved to best_model.npy
+Epoch   2/15  train_loss=0.0211  train_acc=0.8546  val_loss=0.0196  val_acc=0.8648
+Model saved to best_model.npy
+Epoch   3/15  train_loss=0.0192  train_acc=0.8677  val_loss=0.0192  val_acc=0.8677
+Model saved to best_model.npy
+Epoch   4/15  train_loss=0.0179  train_acc=0.8770  val_loss=0.0190  val_acc=0.8638
+Epoch   5/15  train_loss=0.0171  train_acc=0.8820  val_loss=0.0167  val_acc=0.8862
+Model saved to best_model.npy
+Epoch   6/15  train_loss=0.0163  train_acc=0.8881  val_loss=0.0159  val_acc=0.8928
+Model saved to best_model.npy
+Epoch   7/15  train_loss=0.0158  train_acc=0.8914  val_loss=0.0157  val_acc=0.8902
+Epoch   8/15  train_loss=0.0151  train_acc=0.8961  val_loss=0.0161  val_acc=0.8890
+Epoch   9/15  train_loss=0.0146  train_acc=0.9001  val_loss=0.0161  val_acc=0.8902
+Epoch  10/15  train_loss=0.0141  train_acc=0.9044  val_loss=0.0156  val_acc=0.8913
+Epoch  11/15  train_loss=0.0138  train_acc=0.9064  val_loss=0.0147  val_acc=0.8978
+Model saved to best_model.npy
+Epoch  12/15  train_loss=0.0134  train_acc=0.9092  val_loss=0.0158  val_acc=0.8885
+Epoch  13/15  train_loss=0.0129  train_acc=0.9128  val_loss=0.0154  val_acc=0.8942
+Epoch  14/15  train_loss=0.0126  train_acc=0.9153  val_loss=0.0150  val_acc=0.8968
+Epoch  15/15  train_loss=0.0122  train_acc=0.9189  val_loss=0.0157  val_acc=0.8913
+Model loaded from best_model.npy
+Traceback (most recent call last):
+  File "C:\Users\HP\Downloads\file\train.py", line 208, in <module>
+    train(args)
+  File "C:\Users\HP\Downloads\file\train.py", line 192, in train
+    test_logits  = model.forward(x_test)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Downloads\file\network\mlp.py", line 57, in forward
+    out = layer.forward(out)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Downloads\file\network\layers.py", line 52, in forward
+    self.z = x @ self.W + self.b        # pre-activation
+             ~~^~~~~~~~
+ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 128 is different from 10)

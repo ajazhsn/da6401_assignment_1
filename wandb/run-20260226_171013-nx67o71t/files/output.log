@@ -1,0 +1,32 @@
+Loading dataset: fashion_mnist
+Train: (54000, 784), Val: (6000, 784), Test: (10000, 784)
+Epoch   1/15  train_loss=2.3029  train_acc=0.0990  val_loss=2.3026  val_acc=0.1000
+Model saved to best_model.npy
+Epoch   2/15  train_loss=2.3028  train_acc=0.0993  val_loss=2.3029  val_acc=0.1000
+Epoch   3/15  train_loss=2.3029  train_acc=0.0983  val_loss=2.3027  val_acc=0.1000
+Epoch   4/15  train_loss=2.3030  train_acc=0.0997  val_loss=2.3026  val_acc=0.1000
+Epoch   5/15  train_loss=2.3029  train_acc=0.0994  val_loss=2.3027  val_acc=0.1000
+Epoch   6/15  train_loss=2.3029  train_acc=0.0976  val_loss=2.3027  val_acc=0.1000
+Epoch   7/15  train_loss=2.3028  train_acc=0.0984  val_loss=2.3028  val_acc=0.1000
+Epoch   8/15  train_loss=2.3029  train_acc=0.0995  val_loss=2.3028  val_acc=0.1000
+Epoch   9/15  train_loss=2.3029  train_acc=0.0986  val_loss=2.3027  val_acc=0.1000
+Epoch  10/15  train_loss=2.3029  train_acc=0.0995  val_loss=2.3027  val_acc=0.1000
+Epoch  11/15  train_loss=2.3029  train_acc=0.0996  val_loss=2.3027  val_acc=0.1000
+Epoch  12/15  train_loss=2.3029  train_acc=0.0986  val_loss=2.3028  val_acc=0.1000
+Epoch  13/15  train_loss=2.3029  train_acc=0.0992  val_loss=2.3026  val_acc=0.1000
+Epoch  14/15  train_loss=2.3027  train_acc=0.1000  val_loss=2.3031  val_acc=0.1000
+Epoch  15/15  train_loss=2.3029  train_acc=0.0994  val_loss=2.3028  val_acc=0.1000
+Model loaded from best_model.npy
+Traceback (most recent call last):
+  File "C:\Users\HP\Downloads\file\train.py", line 208, in <module>
+    train(args)
+  File "C:\Users\HP\Downloads\file\train.py", line 192, in train
+    test_logits  = model.forward(x_test)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Downloads\file\network\mlp.py", line 57, in forward
+    out = layer.forward(out)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Downloads\file\network\layers.py", line 52, in forward
+    self.z = x @ self.W + self.b        # pre-activation
+             ~~^~~~~~~~
+ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 64 is different from 10)

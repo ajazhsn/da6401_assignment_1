@@ -1,0 +1,38 @@
+Loading dataset: fashion_mnist
+Train: (54000, 784), Val: (6000, 784), Test: (10000, 784)
+Epoch   1/15  train_loss=0.0259  train_acc=0.8174  val_loss=0.0198  val_acc=0.8625
+Model saved to best_model.npy
+Epoch   2/15  train_loss=0.0203  train_acc=0.8585  val_loss=0.0193  val_acc=0.8663
+Model saved to best_model.npy
+Epoch   3/15  train_loss=0.0188  train_acc=0.8704  val_loss=0.0184  val_acc=0.8705
+Model saved to best_model.npy
+Epoch   4/15  train_loss=0.0174  train_acc=0.8802  val_loss=0.0178  val_acc=0.8748
+Model saved to best_model.npy
+Epoch   5/15  train_loss=0.0166  train_acc=0.8851  val_loss=0.0170  val_acc=0.8815
+Model saved to best_model.npy
+Epoch   6/15  train_loss=0.0160  train_acc=0.8905  val_loss=0.0179  val_acc=0.8745
+Epoch   7/15  train_loss=0.0156  train_acc=0.8930  val_loss=0.0156  val_acc=0.8942
+Model saved to best_model.npy
+Epoch   8/15  train_loss=0.0150  train_acc=0.8966  val_loss=0.0160  val_acc=0.8912
+Epoch   9/15  train_loss=0.0146  train_acc=0.9000  val_loss=0.0160  val_acc=0.8902
+Epoch  10/15  train_loss=0.0143  train_acc=0.9028  val_loss=0.0155  val_acc=0.8935
+Epoch  11/15  train_loss=0.0139  train_acc=0.9053  val_loss=0.0156  val_acc=0.8925
+Epoch  12/15  train_loss=0.0133  train_acc=0.9109  val_loss=0.0152  val_acc=0.8960
+Model saved to best_model.npy
+Epoch  13/15  train_loss=0.0132  train_acc=0.9104  val_loss=0.0158  val_acc=0.8913
+Epoch  14/15  train_loss=0.0127  train_acc=0.9141  val_loss=0.0156  val_acc=0.8948
+Epoch  15/15  train_loss=0.0127  train_acc=0.9138  val_loss=0.0154  val_acc=0.8935
+Model loaded from best_model.npy
+Traceback (most recent call last):
+  File "C:\Users\HP\Downloads\file\train.py", line 208, in <module>
+    train(args)
+  File "C:\Users\HP\Downloads\file\train.py", line 192, in train
+    test_logits  = model.forward(x_test)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Downloads\file\network\mlp.py", line 57, in forward
+    out = layer.forward(out)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Downloads\file\network\layers.py", line 52, in forward
+    self.z = x @ self.W + self.b        # pre-activation
+             ~~^~~~~~~~
+ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 128 is different from 10)

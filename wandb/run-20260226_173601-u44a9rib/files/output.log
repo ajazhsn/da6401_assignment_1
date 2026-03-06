@@ -1,0 +1,41 @@
+Loading dataset: fashion_mnist
+Train: (54000, 784), Val: (6000, 784), Test: (10000, 784)
+Epoch   1/15  train_loss=0.8849  train_acc=0.6525  val_loss=0.4892  val_acc=0.8145
+Model saved to best_model.npy
+Epoch   2/15  train_loss=0.4441  train_acc=0.8428  val_loss=0.4062  val_acc=0.8617
+Model saved to best_model.npy
+Epoch   3/15  train_loss=0.3888  train_acc=0.8632  val_loss=0.3616  val_acc=0.8723
+Model saved to best_model.npy
+Epoch   4/15  train_loss=0.3576  train_acc=0.8737  val_loss=0.3494  val_acc=0.8735
+Model saved to best_model.npy
+Epoch   5/15  train_loss=0.3342  train_acc=0.8798  val_loss=0.3418  val_acc=0.8767
+Model saved to best_model.npy
+Epoch   6/15  train_loss=0.3190  train_acc=0.8850  val_loss=0.3340  val_acc=0.8825
+Model saved to best_model.npy
+Epoch   7/15  train_loss=0.3030  train_acc=0.8909  val_loss=0.3297  val_acc=0.8838
+Model saved to best_model.npy
+Epoch   8/15  train_loss=0.2933  train_acc=0.8928  val_loss=0.3205  val_acc=0.8878
+Model saved to best_model.npy
+Epoch   9/15  train_loss=0.2822  train_acc=0.8975  val_loss=0.3373  val_acc=0.8797
+Epoch  10/15  train_loss=0.2719  train_acc=0.9015  val_loss=0.3284  val_acc=0.8820
+Epoch  11/15  train_loss=0.2634  train_acc=0.9041  val_loss=0.3234  val_acc=0.8873
+Epoch  12/15  train_loss=0.2552  train_acc=0.9065  val_loss=0.3126  val_acc=0.8888
+Model saved to best_model.npy
+Epoch  13/15  train_loss=0.2476  train_acc=0.9084  val_loss=0.3093  val_acc=0.8947
+Model saved to best_model.npy
+Epoch  14/15  train_loss=0.2406  train_acc=0.9121  val_loss=0.3142  val_acc=0.8888
+Epoch  15/15  train_loss=0.2324  train_acc=0.9159  val_loss=0.3236  val_acc=0.8863
+Model loaded from best_model.npy
+Traceback (most recent call last):
+  File "C:\Users\HP\Downloads\file\train.py", line 208, in <module>
+    train(args)
+  File "C:\Users\HP\Downloads\file\train.py", line 192, in train
+    test_logits  = model.forward(x_test)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Downloads\file\network\mlp.py", line 57, in forward
+    out = layer.forward(out)
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Downloads\file\network\layers.py", line 52, in forward
+    self.z = x @ self.W + self.b        # pre-activation
+             ~~^~~~~~~~
+ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 128 is different from 10)

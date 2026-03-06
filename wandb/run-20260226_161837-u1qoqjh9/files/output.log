@@ -1,0 +1,10 @@
+  [sgd] Epoch 1/10 train_loss=2.2852 val_acc=0.1150
+  [sgd] Epoch 2/10 train_loss=2.2758 val_acc=0.1285
+  [sgd] Epoch 3/10 train_loss=2.2669 val_acc=0.1408
+  [sgd] Epoch 4/10 train_loss=2.2582 val_acc=0.1512
+  [sgd] Epoch 5/10 train_loss=2.2498 val_acc=0.1622
+  [sgd] Epoch 6/10 train_loss=2.2415 val_acc=0.1745
+  [sgd] Epoch 7/10 train_loss=2.2335 val_acc=0.1870
+  [sgd] Epoch 8/10 train_loss=2.2256 val_acc=0.1980
+  [sgd] Epoch 9/10 train_loss=2.2178 val_acc=0.2105
+  [sgd] Epoch 10/10 train_loss=2.2101 val_acc=0.2217

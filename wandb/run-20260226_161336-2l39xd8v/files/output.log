@@ -1,0 +1,13 @@
+Dataset: fashion_mnist, Shape: (60000, 28, 28)
+  Class 0 (T-shirt/top): logged 5 samples
+  Class 1 (Trouser): logged 5 samples
+  Class 2 (Pullover): logged 5 samples
+  Class 3 (Dress): logged 5 samples
+  Class 4 (Coat): logged 5 samples
+  Class 5 (Sandal): logged 5 samples
+  Class 6 (Shirt): logged 5 samples
+  Class 7 (Sneaker): logged 5 samples
+  Class 8 (Bag): logged 5 samples
+  Class 9 (Ankle boot): logged 5 samples
+
+Done! Check your W&B dashboard for the image table.

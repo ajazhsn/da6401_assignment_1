@@ -1,0 +1,10 @@
+  [rmsprop] Epoch 1/10 train_loss=0.5415 val_acc=0.8293
+  [rmsprop] Epoch 2/10 train_loss=0.3865 val_acc=0.8627
+  [rmsprop] Epoch 3/10 train_loss=0.3488 val_acc=0.8452
+  [rmsprop] Epoch 4/10 train_loss=0.3279 val_acc=0.8727
+  [rmsprop] Epoch 5/10 train_loss=0.3121 val_acc=0.8780
+  [rmsprop] Epoch 6/10 train_loss=0.3024 val_acc=0.8777
+  [rmsprop] Epoch 7/10 train_loss=0.2947 val_acc=0.8802
+  [rmsprop] Epoch 8/10 train_loss=0.2903 val_acc=0.8827
+  [rmsprop] Epoch 9/10 train_loss=0.2861 val_acc=0.8788
+  [rmsprop] Epoch 10/10 train_loss=0.2812 val_acc=0.8738

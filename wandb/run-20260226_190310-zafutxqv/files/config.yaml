@@ -1,0 +1,97 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            hgmacninrtgzl9asedf06a0zog67eewx:
+                args:
+                    - --activation=sigmoid
+                    - --batch_size=32
+                    - --dataset=fashion_mnist
+                    - --epochs=15
+                    - --hidden_size=128
+                    - --learning_rate=0.0007738421296815536
+                    - --loss=cross_entropy
+                    - --num_layers=3
+                    - --optimizer=adam
+                    - --weight_decay=0
+                    - --weight_init=xavier
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "195628625920"
+                        used: "185936580608"
+                email: da25m006@smail.iitm.ac.in
+                executable: C:\Users\HP\ds_env\Scripts\python.exe
+                host: Ajaz
+                memory:
+                    total: "16936132608"
+                os: Windows-11-10.0.26200-SP0
+                program: C:\Users\HP\Downloads\file\train.py
+                python: CPython 3.12.10
+                root: C:\Users\HP\Downloads\file
+                startedAt: "2026-02-26T13:33:10.294949Z"
+                writerId: hgmacninrtgzl9asedf06a0zog67eewx
+        m: []
+        python_version: 3.12.10
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 14
+                - 16
+                - 62
+            "4": 3.12.10
+            "5": 0.25.0
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64
+activation:
+    value: sigmoid
+batch_size:
+    value: 32
+config_path:
+    value: best_config.json
+dataset:
+    value: fashion_mnist
+epochs:
+    value: 15
+hidden_size:
+    value: 128
+hidden_sizes:
+    value:
+        - 128
+        - 128
+        - 128
+learning_rate:
+    value: 0.0007738421296815536
+loss:
+    value: cross_entropy
+no_wandb:
+    value: false
+num_layers:
+    value: 3
+optimizer:
+    value: adam
+save_path:
+    value: best_model.npy
+val_split:
+    value: 0.1
+wandb_entity:
+    value: null
+wandb_project:
+    value: da6401-assignment1
+weight_decay:
+    value: 0
+weight_init:
+    value: xavier

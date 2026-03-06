@@ -1,0 +1,25 @@
+2026-02-26 22:31:58,075 INFO    MainThread:8708 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-02-26 22:31:58,076 INFO    MainThread:8708 [wandb_setup.py:_flush():81] Configure stats pid to 8708
+2026-02-26 22:31:58,076 INFO    MainThread:8708 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-02-26 22:31:58,076 INFO    MainThread:8708 [wandb_init.py:setup_run_log_directory():717] Logging user logs to C:\Users\HP\Downloads\file\wandb\run-20260226_223157-y89isilc\logs\debug.log
+2026-02-26 22:31:58,076 INFO    MainThread:8708 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to C:\Users\HP\Downloads\file\wandb\run-20260226_223157-y89isilc\logs\debug-internal.log
+2026-02-26 22:31:58,083 INFO    MainThread:8708 [wandb_init.py:init():844] calling init triggers
+2026-02-26 22:31:58,083 INFO    MainThread:8708 [wandb_init.py:init():849] wandb.init called with sweep_config: {'activation': 'tanh', 'batch_size': 64, 'dataset': 'fashion_mnist', 'epochs': 15, 'hidden_size': 128, 'learning_rate': 0.00046860453764691013, 'loss': 'mean_squared_error', 'num_layers': 2, 'optimizer': 'adam', 'weight_decay': 0, 'weight_init': 'xavier'}
+config: {'dataset': 'fashion_mnist', 'epochs': 15, 'batch_size': 64, 'loss': 'mean_squared_error', 'optimizer': 'adam', 'learning_rate': 0.00046860453764691013, 'weight_decay': 0.0, 'num_layers': 2, 'hidden_size': [128], 'activation': 'tanh', 'weight_init': 'xavier', 'val_split': 0.1, 'no_wandb': False, 'wandb_project': 'da6401-assignment1', 'wandb_entity': None, 'save_path': 'best_model.npy', 'config_path': 'best_config.json', 'hidden_sizes': [128, 128], '_wandb': {}}
+2026-02-26 22:31:58,083 INFO    MainThread:8708 [wandb_init.py:init():892] starting backend
+2026-02-26 22:32:00,812 INFO    MainThread:8708 [wandb_init.py:init():895] sending inform_init request
+2026-02-26 22:32:00,928 INFO    MainThread:8708 [wandb_init.py:init():903] backend started and connected
+2026-02-26 22:32:00,930 INFO    MainThread:8708 [wandb_run.py:_config_callback():1403] config_cb None None {'activation': 'tanh', 'batch_size': 64, 'dataset': 'fashion_mnist', 'epochs': 15, 'hidden_size': 128, 'learning_rate': 0.00046860453764691013, 'loss': 'mean_squared_error', 'num_layers': 2, 'optimizer': 'adam', 'weight_decay': 0, 'weight_init': 'xavier'}
+2026-02-26 22:32:00,933 INFO    MainThread:8708 [wandb_init.py:init():973] updated telemetry
+2026-02-26 22:32:00,937 INFO    MainThread:8708 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-02-26 22:32:02,427 INFO    MainThread:8708 [wandb_init.py:init():1042] starting run threads in backend
+2026-02-26 22:32:03,079 INFO    MainThread:8708 [wandb_run.py:_console_start():2524] atexit reg
+2026-02-26 22:32:03,080 INFO    MainThread:8708 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-02-26 22:32:03,080 INFO    MainThread:8708 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-02-26 22:32:03,081 INFO    MainThread:8708 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-02-26 22:32:03,095 INFO    MainThread:8708 [wandb_init.py:init():1082] run started, returning control to user process
+2026-02-26 22:37:26,524 INFO    MainThread:8708 [wandb_run.py:_finish():2291] finishing run da25m006-iitmaana/uncategorized/y89isilc
+2026-02-26 22:37:26,526 INFO    MainThread:8708 [wandb_run.py:_atexit_cleanup():2490] got exitcode: 0
+2026-02-26 22:37:26,527 INFO    MainThread:8708 [wandb_run.py:_restore():2472] restore
+2026-02-26 22:37:26,528 INFO    MainThread:8708 [wandb_run.py:_restore():2478] restore done
+2026-02-26 22:37:29,420 INFO    MainThread:8708 [wandb_run.py:_footer_sync_info():3868] logging synced files

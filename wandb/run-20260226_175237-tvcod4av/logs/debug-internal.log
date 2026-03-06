@@ -1,0 +1,12 @@
+{"time":"2026-02-26T17:52:40.0384761+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-26T17:52:40.487689+05:30","level":"INFO","msg":"stream: created new stream","id":"tvcod4av"}
+{"time":"2026-02-26T17:52:40.4881989+05:30","level":"INFO","msg":"handler: started","stream_id":"tvcod4av"}
+{"time":"2026-02-26T17:52:40.4898555+05:30","level":"INFO","msg":"stream: started","id":"tvcod4av"}
+{"time":"2026-02-26T17:52:40.4898555+05:30","level":"INFO","msg":"writer: started","stream_id":"tvcod4av"}
+{"time":"2026-02-26T17:52:40.4898555+05:30","level":"INFO","msg":"sender: started","stream_id":"tvcod4av"}
+{"time":"2026-02-26T18:01:04.2978104+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-26T18:01:04.8026329+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-26T18:01:04.8481448+05:30","level":"INFO","msg":"stream: closing","id":"tvcod4av"}
+{"time":"2026-02-26T18:01:04.8481448+05:30","level":"INFO","msg":"handler: closed","stream_id":"tvcod4av"}
+{"time":"2026-02-26T18:01:04.8519059+05:30","level":"INFO","msg":"sender: closed","stream_id":"tvcod4av"}
+{"time":"2026-02-26T18:01:04.8519059+05:30","level":"INFO","msg":"stream: closed","id":"tvcod4av"}

@@ -1,0 +1,12 @@
+{"time":"2026-02-26T17:36:08.3881065+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-26T17:36:08.8526756+05:30","level":"INFO","msg":"stream: created new stream","id":"jd49pabx"}
+{"time":"2026-02-26T17:36:08.8531896+05:30","level":"INFO","msg":"handler: started","stream_id":"jd49pabx"}
+{"time":"2026-02-26T17:36:08.8548382+05:30","level":"INFO","msg":"stream: started","id":"jd49pabx"}
+{"time":"2026-02-26T17:36:08.8548382+05:30","level":"INFO","msg":"writer: started","stream_id":"jd49pabx"}
+{"time":"2026-02-26T17:36:08.8548382+05:30","level":"INFO","msg":"sender: started","stream_id":"jd49pabx"}
+{"time":"2026-02-26T17:43:24.1620496+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-26T17:43:24.6153553+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-26T17:43:24.6330567+05:30","level":"INFO","msg":"stream: closing","id":"jd49pabx"}
+{"time":"2026-02-26T17:43:24.6330567+05:30","level":"INFO","msg":"handler: closed","stream_id":"jd49pabx"}
+{"time":"2026-02-26T17:43:24.6348248+05:30","level":"INFO","msg":"sender: closed","stream_id":"jd49pabx"}
+{"time":"2026-02-26T17:43:24.6348248+05:30","level":"INFO","msg":"stream: closed","id":"jd49pabx"}

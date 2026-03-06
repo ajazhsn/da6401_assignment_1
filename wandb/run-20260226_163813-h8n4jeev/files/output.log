@@ -1,0 +1,22 @@
+  [config-1-adam-relu] Epoch 1/20 train_acc=0.8151 val_acc=0.8448
+  [config-1-adam-relu] Epoch 2/20 train_acc=0.8636 val_acc=0.8748
+  [config-1-adam-relu] Epoch 3/20 train_acc=0.8752 val_acc=0.8705
+  [config-1-adam-relu] Epoch 4/20 train_acc=0.8850 val_acc=0.8762
+  [config-1-adam-relu] Epoch 5/20 train_acc=0.8902 val_acc=0.8815
+  [config-1-adam-relu] Epoch 6/20 train_acc=0.8957 val_acc=0.8807
+  [config-1-adam-relu] Epoch 7/20 train_acc=0.8994 val_acc=0.8918
+  [config-1-adam-relu] Epoch 8/20 train_acc=0.9039 val_acc=0.8908
+  [config-1-adam-relu] Epoch 9/20 train_acc=0.9081 val_acc=0.8997
+  [config-1-adam-relu] Epoch 10/20 train_acc=0.9100 val_acc=0.8842
+  [config-1-adam-relu] Epoch 11/20 train_acc=0.9141 val_acc=0.8985
+  [config-1-adam-relu] Epoch 12/20 train_acc=0.9165 val_acc=0.8993
+  [config-1-adam-relu] Epoch 13/20 train_acc=0.9189 val_acc=0.8945
+  [config-1-adam-relu] Epoch 14/20 train_acc=0.9228 val_acc=0.8962
+  [config-1-adam-relu] Epoch 15/20 train_acc=0.9247 val_acc=0.8977
+  [config-1-adam-relu] Epoch 16/20 train_acc=0.9274 val_acc=0.9023
+  [config-1-adam-relu] Epoch 17/20 train_acc=0.9294 val_acc=0.8978
+  [config-1-adam-relu] Epoch 18/20 train_acc=0.9323 val_acc=0.8987
+  [config-1-adam-relu] Epoch 19/20 train_acc=0.9324 val_acc=0.8980
+  [config-1-adam-relu] Epoch 20/20 train_acc=0.9336 val_acc=0.8943
+
+  [config-1-adam-relu] Test Acc=0.8887  F1=0.8888

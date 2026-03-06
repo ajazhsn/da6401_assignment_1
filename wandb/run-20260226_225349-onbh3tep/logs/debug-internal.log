@@ -1,0 +1,12 @@
+{"time":"2026-02-26T22:53:52.4542314+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-26T22:53:52.949411+05:30","level":"INFO","msg":"stream: created new stream","id":"onbh3tep"}
+{"time":"2026-02-26T22:53:52.949411+05:30","level":"INFO","msg":"handler: started","stream_id":"onbh3tep"}
+{"time":"2026-02-26T22:53:52.95237+05:30","level":"INFO","msg":"stream: started","id":"onbh3tep"}
+{"time":"2026-02-26T22:53:52.95237+05:30","level":"INFO","msg":"writer: started","stream_id":"onbh3tep"}
+{"time":"2026-02-26T22:53:52.95237+05:30","level":"INFO","msg":"sender: started","stream_id":"onbh3tep"}
+{"time":"2026-02-26T22:58:10.4860038+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-26T22:58:10.9070446+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-26T22:58:10.9320876+05:30","level":"INFO","msg":"stream: closing","id":"onbh3tep"}
+{"time":"2026-02-26T22:58:10.9320876+05:30","level":"INFO","msg":"handler: closed","stream_id":"onbh3tep"}
+{"time":"2026-02-26T22:58:10.9332166+05:30","level":"INFO","msg":"sender: closed","stream_id":"onbh3tep"}
+{"time":"2026-02-26T22:58:10.9332166+05:30","level":"INFO","msg":"stream: closed","id":"onbh3tep"}

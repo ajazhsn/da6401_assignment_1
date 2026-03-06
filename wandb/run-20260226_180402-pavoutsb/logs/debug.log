@@ -1,0 +1,25 @@
+2026-02-26 18:04:02,305 INFO    MainThread:5072 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-02-26 18:04:02,305 INFO    MainThread:5072 [wandb_setup.py:_flush():81] Configure stats pid to 5072
+2026-02-26 18:04:02,305 INFO    MainThread:5072 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-02-26 18:04:02,306 INFO    MainThread:5072 [wandb_init.py:setup_run_log_directory():717] Logging user logs to C:\Users\HP\Downloads\file\wandb\run-20260226_180402-pavoutsb\logs\debug.log
+2026-02-26 18:04:02,306 INFO    MainThread:5072 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to C:\Users\HP\Downloads\file\wandb\run-20260226_180402-pavoutsb\logs\debug-internal.log
+2026-02-26 18:04:02,308 INFO    MainThread:5072 [wandb_init.py:init():844] calling init triggers
+2026-02-26 18:04:02,308 INFO    MainThread:5072 [wandb_init.py:init():849] wandb.init called with sweep_config: {'activation': 'tanh', 'batch_size': 64, 'dataset': 'fashion_mnist', 'epochs': 15, 'hidden_size': 128, 'learning_rate': 0.00014412091281490664, 'loss': 'mean_squared_error', 'num_layers': 3, 'optimizer': 'nadam', 'weight_decay': 0, 'weight_init': 'xavier'}
+config: {'dataset': 'fashion_mnist', 'epochs': 15, 'batch_size': 64, 'loss': 'mean_squared_error', 'optimizer': 'nadam', 'learning_rate': 0.00014412091281490664, 'weight_decay': 0.0, 'num_layers': 3, 'hidden_size': [128], 'activation': 'tanh', 'weight_init': 'xavier', 'val_split': 0.1, 'no_wandb': False, 'wandb_project': 'da6401-assignment1', 'wandb_entity': None, 'save_path': 'best_model.npy', 'config_path': 'best_config.json', 'hidden_sizes': [128, 128, 128], '_wandb': {}}
+2026-02-26 18:04:02,308 INFO    MainThread:5072 [wandb_init.py:init():892] starting backend
+2026-02-26 18:04:05,016 INFO    MainThread:5072 [wandb_init.py:init():895] sending inform_init request
+2026-02-26 18:04:05,128 INFO    MainThread:5072 [wandb_init.py:init():903] backend started and connected
+2026-02-26 18:04:05,130 INFO    MainThread:5072 [wandb_run.py:_config_callback():1403] config_cb None None {'activation': 'tanh', 'batch_size': 64, 'dataset': 'fashion_mnist', 'epochs': 15, 'hidden_size': 128, 'learning_rate': 0.00014412091281490664, 'loss': 'mean_squared_error', 'num_layers': 3, 'optimizer': 'nadam', 'weight_decay': 0, 'weight_init': 'xavier'}
+2026-02-26 18:04:05,131 INFO    MainThread:5072 [wandb_init.py:init():973] updated telemetry
+2026-02-26 18:04:05,139 INFO    MainThread:5072 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-02-26 18:04:06,078 INFO    MainThread:5072 [wandb_init.py:init():1042] starting run threads in backend
+2026-02-26 18:04:06,619 INFO    MainThread:5072 [wandb_run.py:_console_start():2524] atexit reg
+2026-02-26 18:04:06,620 INFO    MainThread:5072 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-02-26 18:04:06,620 INFO    MainThread:5072 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-02-26 18:04:06,621 INFO    MainThread:5072 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-02-26 18:04:06,633 INFO    MainThread:5072 [wandb_init.py:init():1082] run started, returning control to user process
+2026-02-26 18:08:48,207 INFO    MainThread:5072 [wandb_run.py:_finish():2291] finishing run da25m006-iitmaana/uncategorized/pavoutsb
+2026-02-26 18:08:48,208 INFO    MainThread:5072 [wandb_run.py:_atexit_cleanup():2490] got exitcode: 0
+2026-02-26 18:08:48,209 INFO    MainThread:5072 [wandb_run.py:_restore():2472] restore
+2026-02-26 18:08:48,210 INFO    MainThread:5072 [wandb_run.py:_restore():2478] restore done
+2026-02-26 18:08:50,009 INFO    MainThread:5072 [wandb_run.py:_footer_sync_info():3868] logging synced files
