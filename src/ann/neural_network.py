@@ -80,7 +80,7 @@ class NeuralNetwork:
     def compute_loss(self, logits, y_true):
         return self.loss_fn.forward(logits, y_true)
 
-    def backward(self):
+    def backward(self, *args, **kwargs):
         grad = self.loss_fn.backward()
         for layer in reversed(self.layers):
             grad = layer.backward(grad)
@@ -138,20 +138,22 @@ class NeuralNetwork:
                 layer.b = np.array(w[1]).copy()
 
     def save(self, path):
-        """Save as flat list [W0, b0, W1, b1, ...] — most compatible format."""
+        """Save as [input_size, hidden_sizes, output_size, W0, b0, W1, b1, ...]"""
         import os
         if os.path.dirname(path):
             os.makedirs(os.path.dirname(path), exist_ok=True)
-        # Save as flat list for maximum autograder compatibility
-        flat = []
+        data = [self.input_size, self.hidden_sizes, self.output_size]
         for layer in self.layers:
-            flat.append(layer.W.copy())
-            flat.append(layer.b.copy())
-        np.save(path, np.array(flat, dtype=object), allow_pickle=True)
+            data.append(layer.W.copy())
+            data.append(layer.b.copy())
+        np.save(path, np.array(data, dtype=object), allow_pickle=True)
         print(f"Model saved → {path}")
 
     def load(self, path):
-        """Load weights from .npy file."""
-        weights = np.load(path, allow_pickle=True)
-        self.set_weights(list(weights))
+        """Load weights from .npy file. Handles both flat and metadata formats."""
+        data = list(np.load(path, allow_pickle=True))
+        # If first element is scalar (input_size), skip metadata [in_sz, hidden, out_sz]
+        if len(data) > 0 and np.array(data[0]).ndim == 0:
+            data = data[3:]  # skip input_size, hidden_sizes, output_size
+        self.set_weights(data)
         print(f"Model loaded ← {path}")
