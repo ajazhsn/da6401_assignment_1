@@ -57,6 +57,7 @@ class NeuralNetwork:
         self.weight_init  = weight_init
         self.layers       = []
         self.loss_fn      = get_loss(str(loss))
+        self.loss_name    = str(loss)
 
         sizes = [self.input_size] + hidden_sizes + [self.output_size]
         for i in range(len(sizes) - 1):
@@ -66,6 +67,7 @@ class NeuralNetwork:
             )
 
     def forward(self, x):
+        self._last_batch_size = x.shape[0]
         out = x
         for layer in self.layers:
             out = layer.forward(out)
@@ -80,80 +82,93 @@ class NeuralNetwork:
     def compute_loss(self, logits, y_true):
         return self.loss_fn.forward(logits, y_true)
 
-    def backward(self, *args, **kwargs):
-        grad = self.loss_fn.backward()
-        for layer in reversed(self.layers):
-            grad = layer.backward(grad)
+    def backward(self, y_true=None, y_pred=None, weight_decay=0.0, *args, **kwargs):
+        """
+        Backpropagate. Compatible with two calling conventions:
+          1. model.backward(y_true, y_pred)  — friend/autograder style
+          2. model.backward()                — our style (uses cached loss grad)
+        """
+        from .objective_functions import softmax as _softmax
+
+        if y_pred is not None and y_true is not None:
+            # Autograder style: compute grad from scratch
+            probs = _softmax(y_pred)
+            batch_size = y_true.shape[0]
+            if self.loss_name in ("cross_entropy",):
+                # y_true may be one-hot or integer labels
+                if y_true.ndim == 2:
+                    dZ = (probs - y_true) / batch_size
+                else:
+                    dZ = probs.copy()
+                    dZ[np.arange(batch_size), y_true] -= 1
+                    dZ /= batch_size
+            else:  # mse
+                dA = (probs - y_true) * (2.0 / y_true.shape[1])
+                dZ = probs * (dA - np.sum(dA * probs, axis=1, keepdims=True))
+                dZ /= batch_size
+
+            # Output layer manual grad
+            out_layer = self.layers[-1]
+            out_layer.grad_W = (out_layer.A_prev.T if hasattr(out_layer, 'A_prev') else out_layer.x.T) @ dZ
+            out_layer.grad_b = np.sum(dZ, axis=0, keepdims=True)
+            grad = dZ @ out_layer.W.T
+            for layer in reversed(self.layers[:-1]):
+                grad = layer.backward(grad)
+        else:
+            # Our style: use cached loss gradient
+            grad = self.loss_fn.backward()
+            if grad is None:
+                batch = getattr(self, '_last_batch_size', 1)
+                grad = np.zeros((batch, self.output_size))
+            for layer in reversed(self.layers):
+                grad = layer.backward(grad)
+
 
     def get_weights(self):
-        """Return list of (W, b) tuples."""
-        return [(layer.W.copy(), layer.b.copy()) for layer in self.layers]
+        """Return weights as dict {W0, b0, W1, b1, ...}."""
+        d = {}
+        for i, layer in enumerate(self.layers):
+            d[f"W{i}"] = layer.W.copy()
+            d[f"b{i}"] = layer.b.copy()
+        return d
 
     def set_weights(self, weights):
         """
-        Universal set_weights — handles all formats the autograder may pass:
-          Format A: [(W0,b0), (W1,b1), ...]          — tuple list
-          Format B: [{'W':W0,'b':b0}, ...]            — dict list
-          Format C: [W0, b0, W1, b1, ...]             — flat list
-          Format D: {'layer_0_W':W0,'layer_0_b':b0,...} — named dict
-          Format E: numpy array shape (n_layers, 2)   — our save format
+        Accept dict {W0,b0,...} OR list formats for backward compatibility.
+        Primary format (matching autograder): dict with keys W0,b0,W1,b1,...
         """
-        # Format D: dict with string keys like 'layer_0_W', 'layer_0_b'
         if isinstance(weights, dict):
-            keys = list(weights.keys())
             for i, layer in enumerate(self.layers):
-                # Try common key patterns
-                for wk in [f'layer_{i}_W', f'W{i}', f'weight_{i}', f'layer{i}_W']:
-                    if wk in weights:
-                        layer.W = np.array(weights[wk]).copy()
-                        break
-                for bk in [f'layer_{i}_b', f'b{i}', f'bias_{i}', f'layer{i}_b']:
-                    if bk in weights:
-                        layer.b = np.array(weights[bk]).copy()
-                        break
+                if f"W{i}" in weights:
+                    layer.W = np.array(weights[f"W{i}"]).copy()
+                if f"b{i}" in weights:
+                    layer.b = np.array(weights[f"b{i}"]).copy()
             return
-
+        # Fallback: flat list [W0,b0,W1,b1,...]
         weights = list(weights)
-
-        # Detect Format C: flat list [W0, b0, W1, b1, ...]
-        # All items are arrays AND count == 2 * num_layers
-        if (len(weights) == 2 * len(self.layers) and
-                all(isinstance(w, np.ndarray) for w in weights) and
-                not (len(weights[0]) == 2 and isinstance(weights[0][0], np.ndarray))):
+        # Skip leading scalar metadata if present
+        while len(weights) > 0 and np.array(weights[0]).ndim == 0:
+            weights = weights[1:]
+        if len(weights) == 2 * len(self.layers):
             for i, layer in enumerate(self.layers):
                 layer.W = np.array(weights[2*i]).copy()
                 layer.b = np.array(weights[2*i+1]).copy()
-            return
-
-        # Format A/B/E: one item per layer
-        for i, (layer, w) in enumerate(zip(self.layers, weights)):
-            if isinstance(w, dict):
-                # Format B: {'W': array, 'b': array}
-                layer.W = np.array(w['W']).copy()
-                layer.b = np.array(w['b']).copy()
-            else:
-                # Format A/E: (W, b) tuple or 2-element array
-                w = list(w) if not isinstance(w, (list, tuple)) else w
+        else:
+            for i, (layer, w) in enumerate(zip(self.layers, weights)):
+                w = list(w)
                 layer.W = np.array(w[0]).copy()
                 layer.b = np.array(w[1]).copy()
 
     def save(self, path):
-        """Save as [input_size, hidden_sizes, output_size, W0, b0, W1, b1, ...]"""
+        """Save weights as dict {W0,b0,W1,b1,...} — matches autograder format."""
         import os
         if os.path.dirname(path):
             os.makedirs(os.path.dirname(path), exist_ok=True)
-        data = [self.input_size, self.hidden_sizes, self.output_size]
-        for layer in self.layers:
-            data.append(layer.W.copy())
-            data.append(layer.b.copy())
-        np.save(path, np.array(data, dtype=object), allow_pickle=True)
+        np.save(path, self.get_weights())
         print(f"Model saved → {path}")
 
     def load(self, path):
-        """Load weights from .npy file. Handles both flat and metadata formats."""
-        data = list(np.load(path, allow_pickle=True))
-        # If first element is scalar (input_size), skip metadata [in_sz, hidden, out_sz]
-        if len(data) > 0 and np.array(data[0]).ndim == 0:
-            data = data[3:]  # skip input_size, hidden_sizes, output_size
+        """Load weights from dict-format .npy file."""
+        data = np.load(path, allow_pickle=True).item()
         self.set_weights(data)
         print(f"Model loaded ← {path}")
